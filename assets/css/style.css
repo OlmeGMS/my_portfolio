@@ -1416,8 +1416,9 @@ textarea::placeholder {
   cursor:grab;
   gap:40px;
   padding:20px 5%;
-  touch-action:pan-y;
+  touch-action:pan-x pan-y;
   overscroll-behavior-inline:contain;
+  -webkit-overflow-scrolling:touch;
 }
 
 .portfolio-carousel.dragging{
@@ -1443,6 +1444,32 @@ textarea::placeholder {
   border-radius:32px;
   overflow:hidden;
   box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+
+@media (max-width: 768px) {
+
+  .portfolio-carousel-wrapper {
+
+    display: block;
+    margin-inline: -20px;
+
+  }
+
+  .portfolio-carousel {
+
+    gap: 22px;
+    padding: 16px 20px 24px;
+    overflow-x: scroll;
+    cursor: grab;
+
+  }
+
+  .portfolio-item {
+
+    min-width: min(82vw, 340px);
+
+  }
+
 }
 
 .modal-content{
