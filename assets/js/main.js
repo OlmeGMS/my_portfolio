@@ -260,16 +260,16 @@ if (
     ".parallax-image img",
     {
 
-      yPercent: 20,
+      scale: 1.04,
 
-      ease: "none",
+      ease: "power1.out",
 
       scrollTrigger: {
 
         trigger:
           ".parallax-image",
 
-        scrub: true
+        scrub: 0.8
 
       }
 
