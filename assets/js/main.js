@@ -402,6 +402,9 @@ document.addEventListener(
           "click",
           () => {
 
+            const translations =
+              window.translations || {};
+
             // =========================
             // TRANSLATION KEYS
             // =========================
@@ -431,22 +434,22 @@ document.addEventListener(
             // =========================
 
             modalTitle.textContent =
-              window.translations[
+              translations[
                 titleKey
               ] || "";
 
             modalJob.textContent = 
-              window.translations[
+              translations[
                 jobKey
               ]|| "";
 
-            modalDescription.value =
-              window.translations[
+            modalDescription.textContent =
+              translations[
                 descriptionKey
               ] || "";
 
             modalStackJob.textContent = 
-              window.translations[
+              translations[
                 stackJobKey
               ]|| "";
 
@@ -608,3 +611,116 @@ if (
   );
 
 }
+
+/* ========================= */
+/* PREMIUM PORTFOLIO */
+/* ========================= */
+
+(function(){
+
+const carousel = document.querySelector(".portfolio-carousel");
+const items = document.querySelectorAll(".portfolio-item");
+
+if(!carousel || !items.length) return;
+
+let isDragging = false;
+let startX = 0;
+let scrollLeft = 0;
+let dragged = false;
+let activePointerId = null;
+let targetScrollLeft = 0;
+let dragFrame = null;
+const dragThreshold = 14;
+
+function updateActiveSlide(){
+  const center = carousel.scrollLeft + carousel.offsetWidth / 2;
+
+  items.forEach((item)=>{
+    const itemCenter = item.offsetLeft + item.offsetWidth / 2;
+    const distance = Math.abs(center - itemCenter);
+
+    if(distance < item.offsetWidth / 2){
+      item.classList.add("active-slide");
+    }else{
+      item.classList.remove("active-slide");
+    }
+  });
+}
+
+updateActiveSlide();
+
+carousel.addEventListener("scroll", updateActiveSlide);
+
+carousel.addEventListener("pointerdown",(e)=>{
+  if(e.button !== undefined && e.button !== 0) return;
+
+  isDragging = true;
+  dragged = false;
+  activePointerId = e.pointerId;
+  carousel.classList.add("dragging");
+  startX = e.clientX;
+  scrollLeft = carousel.scrollLeft;
+  targetScrollLeft = scrollLeft;
+});
+
+function stopDragging(){
+  if(!isDragging) return;
+
+  isDragging = false;
+  activePointerId = null;
+  carousel.classList.remove("dragging");
+}
+
+function animateDrag(){
+  const distance = targetScrollLeft - carousel.scrollLeft;
+
+  carousel.scrollLeft += distance * 0.22;
+
+  if(isDragging || Math.abs(distance) > 0.5){
+    dragFrame = requestAnimationFrame(animateDrag);
+    return;
+  }
+
+  carousel.scrollLeft = targetScrollLeft;
+  dragFrame = null;
+}
+
+carousel.addEventListener("pointerup", stopDragging);
+carousel.addEventListener("pointercancel", stopDragging);
+window.addEventListener("pointerup", stopDragging);
+window.addEventListener("pointercancel", stopDragging);
+
+carousel.addEventListener("pointermove",(e)=>{
+  if(!isDragging) return;
+  if(activePointerId !== null && e.pointerId !== activePointerId) return;
+
+  const walk = (e.clientX - startX) * 1.25;
+
+  if(Math.abs(walk) > dragThreshold){
+    dragged = true;
+  }
+
+  if(!dragged) return;
+
+  e.preventDefault();
+
+  targetScrollLeft = scrollLeft - walk;
+
+  if(!dragFrame){
+    dragFrame = requestAnimationFrame(animateDrag);
+  }
+});
+
+carousel.addEventListener(
+  "click",
+  (e)=>{
+    if(!dragged) return;
+
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    dragged = false;
+  },
+  true
+);
+
+})();

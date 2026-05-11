@@ -27,7 +27,7 @@
   "services.subtitle": "Services",
   "services.title": "Digital Solutions",
 
-  "services.card1.title": "Backend Development",
+  "services.card1.title": "Backend \nDevelopment",
   "services.card1.description": "Scalable APIs, microservices, and robust architectures using NestJS and NodeJS.",
 
   "services.card2.title": "Aplicaciones Web & Mobile",
@@ -41,6 +41,10 @@
 
   "portfolio.subtitle": "Portfolio",
   "portfolio.title": "Latest Projects",
+  "portfolio.modal.project": "Project",
+  "portfolio.modal.role": "Role",
+  "portfolio.modal.overview": "Overview",
+  "portfolio.modal.stack": "Stack",
   "portfolio.project1.title": "Banco Caja Social",
   "portfolio.project1.job": "iOS Developer",
   "portfolio.project1.description": "Development of the iOS banking application based on the Backbase platform, integrating external financial services and implementing scalable mobile architectures focused on performance and security.",

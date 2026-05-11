@@ -523,6 +523,11 @@ p {
 
 }
 
+.about-description {
+  white-space: pre-line;
+  line-height: 1.8;
+}
+
 /* =========================
    SERVICES
 ========================= */
@@ -567,6 +572,10 @@ p {
   background:
     rgba(255,255,255,0.12);
 
+}
+
+.service-title {
+  white-space: pre-line;
 }
 
 /* =========================
@@ -683,13 +692,16 @@ p {
   inset: 0;
 
   background:
-    rgba(0,0,0,0.7);
+    rgba(5,7,10,0.78);
 
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  padding: 24px;
 
   opacity: 0;
   visibility: hidden;
@@ -711,13 +723,22 @@ p {
 
 .modal-content {
 
-  width: min(700px, 90%);
+  width: min(760px, 100%);
+  max-height: min(760px, calc(100vh - 48px));
+  overflow: auto;
 
-  padding: 40px;
+  padding: 42px;
 
-  border-radius: 30px;
+  border-radius: 28px;
 
   position: relative;
+
+  border: 1px solid rgba(255,255,255,0.12);
+  background:
+    linear-gradient(180deg, rgba(28,30,35,0.96), rgba(10,12,16,0.98));
+  box-shadow:
+    0 32px 90px rgba(0,0,0,0.62),
+    inset 0 1px 0 rgba(255,255,255,0.08);
 
 }
 
@@ -736,19 +757,60 @@ p {
   border-radius: 50%;
 
   background:
-    rgba(255,255,255,0.1);
+    rgba(255,255,255,0.08);
 
   color: white;
 
   cursor: pointer;
 
-  font-size: 18px;
+  font-size: 16px;
+
+  display: grid;
+  place-items: center;
+
+  border: 1px solid rgba(255,255,255,0.12);
+
+  transition:
+    transform .25s ease,
+    background .25s ease,
+    border-color .25s ease;
+
+}
+
+.close-modal:hover {
+
+  transform: scale(1.06);
+  background: rgba(255,255,255,0.14);
+  border-color: rgba(255,255,255,0.22);
+
+}
+
+.modal-header {
+
+  padding-right: 56px;
+  margin-bottom: 28px;
+
+}
+
+.modal-eyebrow,
+.modal-label {
+
+  display: block;
+  color: #00ff88;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  text-transform: uppercase;
 
 }
 
 .modal-title {
 
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  line-height: 1.02;
 
 }
 
@@ -756,36 +818,106 @@ p {
 
   width: 100%;
 
-  border: none;
+  display: grid;
+  gap: 18px;
 
-  border-radius: 20px;
+}
+
+.modal-section {
 
   padding: 20px;
 
-  resize: none;
+  border: 1px solid rgba(255,255,255,0.08);
 
-  outline: none;
+  background: rgba(255,255,255,0.045);
+
+  border-radius: 18px;
+
+}
+
+.modal-job,
+.modal-job-stack {
+
+  margin-top: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 600;
 
 }
 
 .modal-description {
 
-  width: 100%;
-
-  background:
-    rgba(255,255,255,0.05);
-
-  border: none;
-
-  border-radius: 20px;
+  margin-top: 10px;
 
   padding: 20px;
 
+  color: rgba(255,255,255,0.82);
+
+  background: rgba(0,0,0,0.18);
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  border-radius: 16px;
+
+  min-height: 150px;
+
+  line-height: 1.8;
+
+  white-space: pre-line;
+
+  font-size: 15px;
+
+}
+
+.modal-job,
+.modal-job-stack {
+
   color: white;
 
-  resize: none;
+}
 
-  outline: none;
+.close-modal:focus-visible {
+
+  outline: 2px solid rgba(0,255,136,0.85);
+  outline-offset: 4px;
+
+}
+
+@media (max-width: 600px) {
+
+  .portfolio-modal {
+
+    padding: 16px;
+
+  }
+
+  .modal-content {
+
+    padding: 30px 20px 22px;
+    border-radius: 22px;
+
+  }
+
+  .modal-header {
+
+    padding-right: 46px;
+    margin-bottom: 22px;
+
+  }
+
+  .modal-section {
+
+    padding: 16px;
+
+  }
+
+  .modal-description {
+
+    padding: 16px;
+    min-height: 120px;
+
+  }
 
 }
 
@@ -1021,6 +1153,9 @@ textarea::placeholder {
 
   padding: 10px;
 
+  -webkit-user-select: none;
+  user-select: none;
+
 }
 
 .portfolio-carousel::-webkit-scrollbar {
@@ -1071,38 +1206,68 @@ textarea::placeholder {
 
 .carousel-btn {
 
-  width: 60px;
-  height: 60px;
+  width: 64px;
+  height: 64px;
 
   border: none;
 
   border-radius: 50%;
 
   background:
-    rgba(255,255,255,0.1);
+    linear-gradient(145deg, rgba(255,255,255,0.16), rgba(255,255,255,0.06));
 
   color: white;
 
   cursor: pointer;
 
-  font-size: 22px;
+  font-size: 18px;
+
+  display: grid;
+  place-items: center;
 
   backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 
   z-index: 2;
 
+  border: 1px solid rgba(255,255,255,0.18);
+  box-shadow:
+    0 18px 45px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.18);
+
   transition:
     transform .3s ease,
-    background .3s ease;
+    background .3s ease,
+    border-color .3s ease,
+    box-shadow .3s ease;
 
 }
 
 .carousel-btn:hover {
 
-  transform: scale(1.1);
+  transform: translateY(-2px) scale(1.04);
 
   background:
-    rgba(255,255,255,0.2);
+    linear-gradient(145deg, rgba(0,255,136,0.24), rgba(255,255,255,0.1));
+
+  border-color: rgba(0,255,136,0.5);
+  box-shadow:
+    0 22px 55px rgba(0,0,0,0.45),
+    0 0 28px rgba(0,255,136,0.16),
+    inset 0 1px 0 rgba(255,255,255,0.22);
+
+}
+
+.carousel-btn:active {
+
+  transform: translateY(0) scale(0.98);
+
+}
+
+.carousel-btn:focus-visible {
+
+  outline: 2px solid rgba(0,255,136,0.85);
+  outline-offset: 5px;
 
 }
 
@@ -1209,4 +1374,61 @@ textarea::placeholder {
 
   }
 
+}
+
+/* ========================= */
+/* PREMIUM PORTFOLIO UPGRADE */
+/* ========================= */
+
+.portfolio-carousel{
+  scroll-snap-type:x mandatory;
+  cursor:grab;
+  gap:40px;
+  padding:20px 5%;
+  touch-action:pan-y;
+  overscroll-behavior-inline:contain;
+}
+
+.portfolio-carousel.dragging{
+  cursor:grabbing;
+  scroll-behavior:auto;
+  scroll-snap-type:none;
+}
+
+.portfolio-item{
+  scroll-snap-align:center;
+  scroll-snap-stop:always;
+  transition:transform .45s ease, opacity .45s ease;
+  opacity:.55;
+  transform:scale(.92);
+}
+
+.portfolio-item.active-slide{
+  opacity:1;
+  transform:scale(1);
+}
+
+.portfolio-item img{
+  border-radius:32px;
+  overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,.45);
+}
+
+.modal-content{
+  line-height:1.8;
+}
+
+.modal-stack{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:30px;
+}
+
+.modal-stack span{
+  padding:10px 18px;
+  border-radius:999px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.08);
+  font-size:.9rem;
 }

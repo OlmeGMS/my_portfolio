@@ -1,721 +1,801 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
 
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
 
-   <meta name="author" content="Olme Marin">
+    <meta name="author" content="Olme Marin">
 
-  <title>Olme Marin</title>
+    <title>Olme Marin</title>
 
-  <link rel="shortcut icon" href="./assets/images/gatito.png">
+    <link rel="shortcut icon" href="./assets/images/gatito.png">
 
-  <link
-    rel="stylesheet"
-    href="./assets/css/style.css"
-  />
+    <link
+      rel="stylesheet"
+      href="./assets/css/style.css"
+    />
 
-  <!-- FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-  <!-- GSAP -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js">
-  </script>
+    <!-- GSAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js">
+    </script>
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js">
-  </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js">
+    </script>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-  <!-- CURSOR -->
-  <div class="cursor"></div>
+    <!-- CURSOR -->
+    <div class="cursor"></div>
 
-  <!-- PRELOADER -->
-  <div class="preloader">
-    <div class="loader-line"></div>
-  </div>
+    <!-- PRELOADER -->
+    <div class="preloader">
+      <div class="loader-line"></div>
+    </div>
 
-  <!-- HEADER -->
-  <header class="header glass">
+    <!-- HEADER -->
+    <header class="header glass">
 
-    <div class="container nav-container">
+      <div class="container nav-container">
 
-      <a href="#" class="logo">
-        OLME MARIN
-      </a>
+        <a href="#" class="logo">
+          OLME MARIN
+        </a>
 
-      <!-- NAV -->
-      <nav class="nav">
+        <!-- NAV -->
+        <nav class="nav">
 
-        <ul class="nav-links">
+          <ul class="nav-links">
 
-          <li>
-            <a
-              href="#hero"
-              data-i18n="nav.home"
-            >
-              Home
-            </a>
-          </li>
+            <li>
+              <a
+                href="#hero"
+                data-i18n="nav.home"
+              >
+                Home
+              </a>
+            </li>
 
-          <li>
-            <a
-              href="#about"
-              data-i18n="nav.about"
-            >
-              About
-            </a>
-          </li>
+            <li>
+              <a
+                href="#about"
+                data-i18n="nav.about"
+              >
+                About
+              </a>
+            </li>
 
-          <li>
+            <li>
+              <a
+                href="#services"
+                data-i18n="nav.services"
+              >
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#portfolio"
+                data-i18n="nav.portfolio"
+              >
+                Portfolio
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="#contact"
+                data-i18n="nav.contact"
+              >
+                Contact
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <!-- LANGUAGE -->
+        <div class="language-switcher">
+
+          <button data-lang="en">
+            EN
+          </button>
+
+          <button data-lang="es">
+            ES
+          </button>
+
+        </div>
+
+        <!-- MOBILE -->
+        <div class="hamburger">
+
+          <span></span>
+          <span></span>
+          <span></span>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- HERO -->
+    <section
+      class="hero"
+      id="hero"
+    >
+
+      <div class="hero-slider">
+
+        <!-- SLIDE 1 -->
+        <div
+          class="slide active"
+          style="
+          background-image:
+          url('./assets/images/hero-12.jpg')
+          "
+        >
+
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+
+            <span data-i18n="hero.slide1.subtitle">
+              Software Engineer & Full Stack Developer
+            </span>
+
+            <h1 data-i18n="hero.slide1.title">
+              Building
+              Digital
+              Experiences
+            </h1>
+
+            <p data-i18n="hero.slide1.description">
+              Over 8 years developing backend, frontend, and mobile solutions using modern technologies and scalable architectures.
+            </p>
+
             <a
               href="#services"
-              data-i18n="nav.services"
+              class="btn"
+              data-i18n="hero.slide1.button"
             >
-              Services
+              Contact Me
             </a>
-          </li>
 
-          <li>
+          </div>
+
+        </div>
+
+        <!-- SLIDE 2 -->
+        <div
+          class="slide"
+          style="
+          background-image:
+          url('./assets/images/hero-2.jpg')
+          "
+        >
+
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+
+            <span data-i18n="hero.slide2.subtitle">
+              Backend • Frontend • Mobile
+            </span>
+
+            <h1 data-i18n="hero.slide2.title">
+              Code That
+              Drives
+              Products
+            </h1>
+
+            <p data-i18n="hero.slide2.description">
+              Specialized in NestJS, Angular, Flutter, and Swift, building fast, scalable, and user-focused applications.
+            </p>
+
             <a
               href="#portfolio"
-              data-i18n="nav.portfolio"
+              class="btn"
+              data-i18n="hero.slide2.button"
             >
-              Portfolio
+              View Portfolio
             </a>
-          </li>
 
-          <li>
+          </div>
+
+        </div>
+
+        <!-- SLIDE 3 -->
+        <div
+          class="slide"
+          style="
+          background-image:
+          url('./assets/images/hero-31.jpg')
+          "
+        >
+
+          <div class="overlay"></div>
+
+          <div class="hero-content">
+
+            <span data-i18n="hero.slide3.subtitle">
+              Full Stack & Mobile Specialist
+            </span>
+
+            <h1 data-i18n="hero.slide3.title">
+              Modern &
+              Scalable
+              Solutions
+            </h1>
+
+            <p data-i18n="hero.slide3.description">
+              I develop web and mobile applications using modern technologies, SQL and NoSQL databases, and clean architecture principles.
+            </p>
+
             <a
               href="#contact"
-              data-i18n="nav.contact"
+              class="btn"
+              data-i18n="hero.slide3.button"
             >
-              Contact
+              Let’s Talk
             </a>
-          </li>
 
-        </ul>
-
-      </nav>
-
-      <!-- LANGUAGE -->
-      <div class="language-switcher">
-
-        <button data-lang="en">
-          EN
-        </button>
-
-        <button data-lang="es">
-          ES
-        </button>
-
-      </div>
-
-      <!-- MOBILE -->
-      <div class="hamburger">
-
-        <span></span>
-        <span></span>
-        <span></span>
-
-      </div>
-
-    </div>
-
-  </header>
-
-  <!-- HERO -->
-  <section
-    class="hero"
-    id="hero"
-  >
-
-    <div class="hero-slider">
-
-      <!-- SLIDE 1 -->
-      <div
-        class="slide active"
-        style="
-        background-image:
-        url('./assets/images/hero-12.jpg')
-        "
-      >
-
-        <div class="overlay"></div>
-
-        <div class="hero-content">
-
-          <span data-i18n="hero.slide1.subtitle">
-            Software Engineer & Full Stack Developer
-          </span>
-
-          <h1 data-i18n="hero.slide1.title">
-            Building
-            Digital
-            Experiences
-          </h1>
-
-          <p data-i18n="hero.slide1.description">
-            Over 8 years developing backend, frontend, and mobile solutions using modern technologies and scalable architectures.
-          </p>
-
-          <a
-            href="#services"
-            class="btn"
-            data-i18n="hero.slide1.button"
-          >
-            Contact Me
-          </a>
+          </div>
 
         </div>
 
       </div>
 
-      <!-- SLIDE 2 -->
-      <div
-        class="slide"
-        style="
-        background-image:
-        url('./assets/images/hero-2.jpg')
-        "
-      >
+    </section>
 
-        <div class="overlay"></div>
+    <!-- ABOUT -->
+    <section
+      class="about section"
+      id="about"
+    >
 
-        <div class="hero-content">
+      <div class="container about-grid">
 
-          <span data-i18n="hero.slide2.subtitle">
-            Backend • Frontend • Mobile
+        <div class="parallax-image">
+
+          <img
+            loading="lazy"
+            src="./assets/images/about.jpg"
+            alt="About"
+          />
+
+        </div>
+
+        <div class="about-content glass">
+
+          <span
+            class="subtitle"
+            data-i18n="about.subtitle"
+          >
+            ABOUT ME
           </span>
 
-          <h1 data-i18n="hero.slide2.title">
-            Code That
-            Drives
-            Products
-          </h1>
+          <h2 data-i18n="about.title">
+            Who am I?
+          </h2>
 
-          <p data-i18n="hero.slide2.description">
-            Specialized in NestJS, Angular, Flutter, and Swift, building fast, scalable, and user-focused applications.
+          <p class="about-description" data-i18n="about.description">
+            I am a Software Engineer with more than 8 years of experience designing and developing scalable digital solutions for web and mobile platforms. Throughout my career, I have worked across industries such as financial services, transportation, and insurance, building high-performance applications focused on reliability, scalability, and user experience.
+
+            My strongest expertise is backend development using NodeJS and NestJS, where I specialize in designing robust APIs, clean architectures, and scalable microservices. I also have experience working with frontend and mobile technologies including Angular, Flutter, and Swift.
+
+            Additionally, I hold an iOS Developer Certification from Backbase
+            , which strengthened my expertise in mobile banking solutions and enterprise-level application development.
+
+            I am passionate about creating modern, efficient, and impactful software solutions while continuously learning and adapting to new technologies and challenges.
           </p>
-
-          <a
-            href="#portfolio"
-            class="btn"
-            data-i18n="hero.slide2.button"
-          >
-            View Portfolio
-          </a>
 
         </div>
 
       </div>
 
-      <!-- SLIDE 3 -->
-      <div
-        class="slide"
-        style="
-        background-image:
-        url('./assets/images/hero-31.jpg')
-        "
-      >
+    </section>
 
-        <div class="overlay"></div>
+    <!-- SERVICES -->
+    <section
+      class="services section"
+      id="services"
+    >
 
-        <div class="hero-content">
+      <div class="container">
 
-          <span data-i18n="hero.slide3.subtitle">
-            Full Stack & Mobile Specialist
+        <div class="section-heading">
+
+          <span
+            class="subtitle"
+            data-i18n="services.subtitle"
+          >
+            Services
           </span>
 
-          <h1 data-i18n="hero.slide3.title">
-            Modern &
-            Scalable
-            Solutions
-          </h1>
+          <h2 data-i18n="services.title">
+            Digital Solutions
+          </h2>
 
-          <p data-i18n="hero.slide3.description">
-            I develop web and mobile applications using modern technologies, SQL and NoSQL databases, and clean architecture principles.
-          </p>
+        </div>
 
-          <a
-            href="#contact"
-            class="btn"
-            data-i18n="hero.slide3.button"
-          >
-            Let’s Talk
-          </a>
+        <div class="services-grid">
+
+          <article class="service-card glass">
+
+            <h3 class="service-title" data-i18n="services.card1.title">
+              Backend <br>  Development
+            </h3>
+            <br>
+            <p data-i18n="services.card1.description">
+              Scalable APIs, microservices, and robust architectures using NestJS and NodeJS.
+            </p>
+
+          </article>
+
+          <article class="service-card glass">
+
+            <h3 data-i18n="services.card2.title">
+              Web & Mobile Apps
+            </h3>
+            <br>
+            <p data-i18n="services.card2.description">
+              Modern and responsive experiences built with Angular, Flutter, and Swift.
+            </p>
+
+          </article>
+
+          <article class="service-card glass">
+
+            <h3 data-i18n="services.card3.title">
+              Architecture & Performance
+            </h3>
+            <br>
+            <p data-i18n="services.card3.description">
+              Optimization, clean architecture, and solutions focused on scalability and performance.
+            </p>
+
+          </article>
 
         </div>
 
       </div>
 
-    </div>
+    </section>
 
-  </section>
+    <!-- STACK -->
+    <section
+      class="stack section"
+      id="stack"
+    >
 
-  <!-- ABOUT -->
-  <section
-    class="about section"
-    id="about"
-  >
+      <div class="container">
 
-    <div class="container about-grid">
+        <div class="section-heading">
 
-      <div class="parallax-image">
+          <span class="subtitle" data-i18n="stack.subtitle">
+            Stack
+          </span>
 
-        <img
-          loading="lazy"
-          src="./assets/images/about.jpg"
-          alt="About"
-        />
+          <h2 data-i18n="stack.title">
+            Technologies
+          </h2>
+
+        </div>
+
+        <div class="stack-grid">
+
+          <!-- NODE -->
+          <div class="stack-card glass">
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+              alt="NodeJS"
+            />
+
+            <span>NodeJS</span>
+
+          </div>
+
+          <!-- NEST -->
+          <div class="stack-card glass">
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
+              alt="NestJS"
+            />
+
+            <span>NestJS</span>
+
+          </div>
+
+          <!-- ANGULAR -->
+          <div class="stack-card glass">
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+              alt="Angular"
+            />
+
+            <span>Angular</span>
+
+          </div>
+
+          <!-- FLUTTER -->
+          <div class="stack-card glass">
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+              alt="Flutter"
+            />
+
+            <span>Flutter</span>
+
+          </div>
+
+          <!-- PHP -->
+          <div class="stack-card glass">
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+              alt="PHP"
+            />
+
+            <span>PHP</span>
+
+          </div>
+
+        </div>
 
       </div>
 
-      <div class="about-content glass">
+    </section>
 
-        <span
-          class="subtitle"
-          data-i18n="about.subtitle"
+    <!-- PORTFOLIO -->
+    <section
+      class="portfolio section"
+      id="portfolio"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="subtitle" data-i18n="portfolio.subtitle">
+            Portfolio
+          </span>
+
+          <h2 data-i18n="portfolio.title">
+            Latest Projects
+          </h2>
+
+        </div>
+
+        <!-- CAROUSEL -->
+        <div class="portfolio-carousel-wrapper">
+
+          <button
+            class="carousel-btn prev-btn"
+            type="button"
+            aria-label="Previous portfolio project"
+          >
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+
+          <div class="portfolio-carousel">
+
+            <!-- ITEM -->
+            <div
+              class="portfolio-item"
+              data-title-key="portfolio.project1.title"
+              data-job-key="portfolio.project1.job"
+              data-description-key="portfolio.project1.description"
+              data-stack-job-key="portfolio.project1.stack.job"
+            >
+
+              <img
+                loading="lazy"
+                src="./assets/images/logos_portfolio/banco_cs.png"
+                alt="banco_cs"
+              />
+
+            </div>
+
+            <!-- ITEM -->
+            <div
+              class="portfolio-item"
+              data-title-key="portfolio.project2.title"
+              data-job-key="portfolio.project2.job"
+              data-description-key="portfolio.project2.description"
+              data-stack-job-key="portfolio.project2.stack.job"
+            >
+
+              <img
+                loading="lazy"
+                src="./assets/images/logos_portfolio/entre-amigos-logo.png"
+                alt="entre-amigos-logo"
+              />
+
+            </div>
+
+            <!-- ITEM -->
+            <div
+              class="portfolio-item"
+              data-title-key="portfolio.project3.title"
+              data-job-key="portfolio.project3.job"
+              data-description-key="portfolio.project3.description"
+              data-stack-job-key="portfolio.project3.stack.job"
+            >
+
+              <img
+                loading="lazy"
+                src="./assets/images/logos_portfolio/imagemaker-logo.png"
+                alt="imagemaker-logo"
+              />
+
+            </div>
+
+            <!-- ITEM -->
+            <div
+              class="portfolio-item"
+              data-title-key="portfolio.project4.title"
+              data-job-key="portfolio.project4.job"
+              data-description-key="portfolio.project4.description"
+              data-stack-job-key="portfolio.project4.stack.job"
+            >
+
+              <img
+                loading="lazy"
+                src="./assets/images/logos_portfolio/logo-montechelo.png"
+                alt="logo-montechelo"
+              />
+
+            </div>
+
+            <!-- ITEM -->
+            <div
+              class="portfolio-item"
+              data-title-key="portfolio.project5.title"
+              data-job-key="portfolio.project5.job"
+              data-description-key="portfolio.project5.description"
+              data-stack-job-key="portfolio.project5.stack.job"
+            >
+
+              <img
+                loading="lazy"
+                src="./assets/images/logos_portfolio/fede-cajas-logo.png"
+                alt="fede-cajas-logo"
+              />
+
+            </div>
+
+            <!-- ITEM -->
+            <div
+              class="portfolio-item"
+              data-title-key="portfolio.project6.title"
+              data-job-key="portfolio.project6.job"
+              data-description-key="portfolio.project6.description"
+              data-stack-job-key="portfolio.project6.stack.job"
+            >
+
+              <img
+                loading="lazy"
+                src="./assets/images/logos_portfolio/cellvoz-logo.png"
+                alt="cellvoz-logo"
+              />
+
+            </div>
+
+            <!-- ITEM -->
+            <div
+              class="portfolio-item"
+              data-title-key="portfolio.project7.title"
+              data-job-key="portfolio.project7.job"
+              data-description-key="portfolio.project7.description"
+              data-stack-job-key="portfolio.project7.stack.job"
+            >
+
+              <img
+                loading="lazy"
+                src="./assets/images/logos_portfolio/taxisya-logo.png"
+                alt="taxisya-logo"
+              />
+
+            </div>
+
+          </div>
+
+          <button
+            class="carousel-btn next-btn"
+            type="button"
+            aria-label="Next portfolio project"
+          >
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- MODAL -->
+    <div
+      class="portfolio-modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="portfolio-modal-title"
+    >
+
+      <div class="modal-content glass">
+
+        <button
+          class="close-modal"
+          type="button"
+          aria-label="Close portfolio details"
         >
-          ABOUT ME
-        </span>
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
 
-        <h2 data-i18n="about.title">
-          Who am I?
-        </h2>
+        <div class="modal-header">
+          <span
+            class="modal-eyebrow"
+            data-i18n="portfolio.modal.project"
+          >
+            Project
+          </span>
+          <h3
+            class="modal-title"
+            id="portfolio-modal-title"
+          ></h3>
+        </div>
 
-        <p data-i18n="about.description">
-          I am a Software Engineer with more than 8 years of experience designing and developing scalable digital solutions for web and mobile platforms. Throughout my career, I have worked across industries such as financial services, transportation, and insurance, building high-performance applications focused on reliability, scalability, and user experience.
+        <div class="modal-description-body">
+          <div class="modal-section">
+            <span
+              class="modal-label"
+              data-i18n="portfolio.modal.role"
+            >
+              Role
+            </span>
+            <h5 class="modal-job"></h5>
+          </div>
 
-          My strongest expertise is backend development using NodeJS and NestJS, where I specialize in designing robust APIs, clean architectures, and scalable microservices. I also have experience working with frontend and mobile technologies including Angular, Flutter, and Swift.
+          <div class="modal-section">
+            <span
+              class="modal-label"
+              data-i18n="portfolio.modal.overview"
+            >
+              Overview
+            </span>
+            <p class="modal-description"></p>
+          </div>
 
-          Additionally, I hold an iOS Developer Certification from Backbase
-          , which strengthened my expertise in mobile banking solutions and enterprise-level application development.
+          <div class="modal-section">
+            <span
+              class="modal-label"
+              data-i18n="portfolio.modal.stack"
+            >
+              Stack
+            </span>
+            <h5 class="modal-job-stack"></h5>
+          </div>
+        </div>
 
-          I am passionate about creating modern, efficient, and impactful software solutions while continuously learning and adapting to new technologies and challenges.
+      </div>
+
+    </div>
+
+    <!-- CONTACT -->
+    <section
+      class="contact section"
+      id="contact"
+    >
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="subtitle" data-i18n="contact.subtitle">
+            Contact
+          </span>
+
+          <h2 data-i18n="contact.title">
+            Let's Connect
+          </h2>
+
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- EMAIL -->
+          <a
+            href="mailto:olme.marin.s@gmail.com"
+            class="contact-card glass"
+          >
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+              alt="Email"
+            />
+
+            <span>Email</span>
+
+          </a>
+
+          <!-- WHATSAPP -->
+          <a
+            href="https://wa.me/573162355084"
+            target="_blank"
+            class="contact-card glass"
+          >
+
+            <i class="fa-brands fa-whatsapp" style="font-size: 85px; color: #25D366;"></i>
+
+            <span>WhatsApp</span>
+
+          </a>
+
+          <!-- LINKEDIN -->
+          <a
+            href="https://linkedin.com/in/olme-marin-sanchez-5640bb57"
+            target="_blank"
+            class="contact-card glass"
+          >
+
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+              alt="LinkedIn"
+            />
+
+            <span>LinkedIn</span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+      <div class="container">
+
+        <p data-i18n="footer.text">
+          © 2026 Olme Marin.
         </p>
 
       </div>
 
-    </div>
+    </footer>
 
-  </section>
+    <!-- JS -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/i18n.js"></script>
 
-  <!-- SERVICES -->
-  <section
-    class="services section"
-    id="services"
-  >
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <span
-          class="subtitle"
-          data-i18n="services.subtitle"
-        >
-          Services
-        </span>
-
-        <h2 data-i18n="services.title">
-          Digital Solutions
-        </h2>
-
-      </div>
-
-      <div class="services-grid">
-
-        <article class="service-card glass">
-
-          <h3 data-i18n="services.card1.title">
-            Backend Development
-          </h3>
-
-          <p data-i18n="services.card1.description">
-            Scalable APIs, microservices, and robust architectures using NestJS and NodeJS.
-          </p>
-
-        </article>
-
-        <article class="service-card glass">
-
-          <h3 data-i18n="services.card2.title">
-            Web & Mobile Apps
-          </h3>
-
-          <p data-i18n="services.card2.description">
-            Modern and responsive experiences built with Angular, Flutter, and Swift.
-          </p>
-
-        </article>
-
-        <article class="service-card glass">
-
-          <h3 data-i18n="services.card3.title">
-            Architecture & Performance
-          </h3>
-
-          <p data-i18n="services.card3.description">
-            Optimization, clean architecture, and solutions focused on scalability and performance.
-          </p>
-
-        </article>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- STACK -->
-  <section
-    class="stack section"
-    id="stack"
-  >
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <span class="subtitle" data-i18n="stack.subtitle">
-          Stack
-        </span>
-
-        <h2 data-i18n="stack.title">
-          Technologies
-        </h2>
-
-      </div>
-
-      <div class="stack-grid">
-
-        <!-- NODE -->
-        <div class="stack-card glass">
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
-            alt="NodeJS"
-          />
-
-          <span>NodeJS</span>
-
-        </div>
-
-        <!-- NEST -->
-        <div class="stack-card glass">
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg"
-            alt="NestJS"
-          />
-
-          <span>NestJS</span>
-
-        </div>
-
-        <!-- ANGULAR -->
-        <div class="stack-card glass">
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
-            alt="Angular"
-          />
-
-          <span>Angular</span>
-
-        </div>
-
-        <!-- FLUTTER -->
-        <div class="stack-card glass">
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
-            alt="Flutter"
-          />
-
-          <span>Flutter</span>
-
-        </div>
-
-        <!-- PHP -->
-        <div class="stack-card glass">
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-            alt="PHP"
-          />
-
-          <span>PHP</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- PORTFOLIO -->
-  <section
-    class="portfolio section"
-    id="portfolio"
-  >
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <span class="subtitle" data-i18n="portfolio.subtitle">
-          Portfolio
-        </span>
-
-        <h2 data-i18n="portfolio.title">
-          Latest Projects
-        </h2>
-
-      </div>
-
-      <!-- CAROUSEL -->
-      <div class="portfolio-carousel-wrapper">
-
-        <button class="carousel-btn prev-btn">
-          ←
-        </button>
-
-        <div class="portfolio-carousel">
-
-          <!-- ITEM -->
-          <div
-            class="portfolio-item"
-            data-title-key="portfolio.project1.title"
-            data-job-key="portfolio.project1.job"
-            data-description-key="portfolio.project1.description"
-            data-stack-job-key="portfolio.project1.stack.job"
-          >
-
-            <img
-              loading="lazy"
-              src="./assets/images/work-1.jpg"
-              alt=""
-            />
-
-          </div>
-
-          <!-- ITEM -->
-          <div
-            class="portfolio-item"
-            data-title-key="portfolio.project2.title"
-            data-job-key="portfolio.project2.job"
-            data-description-key="portfolio.project2.description"
-            data-stack-job-key="portfolio.project2.stack.job"
-          >
-
-            <img
-              loading="lazy"
-              src="./assets/images/work-2.jpg"
-              alt=""
-            />
-
-          </div>
-
-          <!-- ITEM -->
-          <div
-            class="portfolio-item"
-            data-title-key="portfolio.project3.title"
-            data-job-key="portfolio.project3.job"
-            data-description-key="portfolio.project3.description"
-            data-stack-job-key="portfolio.project3.stack.job"
-          >
-
-            <img
-              loading="lazy"
-              src="./assets/images/work-3.jpg"
-              alt=""
-            />
-
-          </div>
-
-          <!-- ITEM -->
-          <div
-            class="portfolio-item"
-            data-title-key="portfolio.project4.title"
-            data-job-key="portfolio.project4.job"
-            data-description-key="portfolio.project4.description"
-            data-stack-job-key="portfolio.project4.stack.job"
-          >
-
-            <img
-              loading="lazy"
-              src="./assets/images/hero-1.png"
-              alt=""
-            />
-
-          </div>
-
-          <!-- ITEM -->
-          <div
-            class="portfolio-item"
-            data-title-key="portfolio.project5.title"
-            data-job-key="portfolio.project5.job"
-            data-description-key="portfolio.project5.description"
-            data-stack-job-key="portfolio.project5.stack.job"
-          >
-
-            <img
-              loading="lazy"
-              src="./assets/images/hero-3.png"
-              alt=""
-            />
-
-          </div>
-
-        </div>
-
-        <button class="carousel-btn next-btn">
-          →
-        </button>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- MODAL -->
-  <div class="portfolio-modal">
-
-    <div class="modal-content glass">
-
-      <button class="close-modal">
-        ✕
-      </button>
-
-      <h3 class="modal-title"></h3>
-
-      <div class="modal-description-body">
-        <h5 class="modal-job"></h5>
-        <br>
-        <textarea
-        class="modal-description"
-        rows="8"
-        ></textarea>
-        <br>  
-        <br>  
-        <h5 class="modal-job-stack"></h5>
-      </div>
-
-      
-
-    </div>
-
-  </div>
-
-  <!-- CONTACT -->
-  <section
-    class="contact section"
-    id="contact"
-  >
-
-    <div class="container">
-
-      <div class="section-heading">
-
-        <span class="subtitle" data-i18n="contact.subtitle">
-          Contact
-        </span>
-
-        <h2 data-i18n="contact.title">
-          Let's Connect
-        </h2>
-
-      </div>
-
-      <div class="contact-grid">
-
-        <!-- EMAIL -->
-        <a
-          href="mailto:correo@ejemplo.com"
-          class="contact-card glass"
-        >
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
-            alt="Email"
-          />
-
-          <span>Email</span>
-
-        </a>
-
-        <!-- WHATSAPP -->
-        <a
-          href="https://wa.me/573162355084"
-          target="_blank"
-          class="contact-card glass"
-        >
-
-          <i class="fa-brands fa-whatsapp" style="font-size: 85px; color: #25D366;"></i>
-
-          <span>WhatsApp</span>
-
-        </a>
-
-        <!-- LINKEDIN -->
-        <a
-          href="https://linkedin.com/in/olme-marin-sanchez-5640bb57"
-          target="_blank"
-          class="contact-card glass"
-        >
-
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
-            alt="LinkedIn"
-          />
-
-          <span>LinkedIn</span>
-
-        </a>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-
-    <div class="container">
-
-      <p data-i18n="footer.text">
-        © 2026 Olme Marin.
-      </p>
-
-    </div>
-
-  </footer>
-
-  <!-- JS -->
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/i18n.js"></script>
-
-</body>
+  </body>
 </html>

@@ -20,14 +20,14 @@
   "hero.slide3.description": "Desarrollo aplicaciones web y móviles utilizando tecnologías modernas, bases de datos SQL y NoSQL, y buenas prácticas de arquitectura.",
   "hero.slide3.button": "Hablemos",
 
-  "about.subtitle": "SOBRE MÍ",
-  "about.title": "¿Quién soy?",
-  "about.description": "Soy Ingeniero de Software con más de 8 años de experiencia diseñando y desarrollando soluciones digitales escalables para plataformas web y móviles. He trabajado en sectores como financiero, transporte y seguros, construyendo aplicaciones modernas enfocadas en rendimiento, escalabilidad y experiencia de usuario.\n\nMi mayor fortaleza es el desarrollo backend utilizando NodeJS y NestJS, donde me especializo en APIs robustas, arquitecturas limpias y microservicios escalables. También cuento con experiencia en Angular, Flutter y Swift.\n\nAdemás, cuento con una certificación como desarrollador iOS por parte de Backbase, fortaleciendo mi experiencia en soluciones móviles y aplicaciones empresariales.\n\nMe apasiona crear productos digitales modernos, eficientes y de alto impacto.",
+  "about.subtitle": "PERFIL PROFESIONAL",
+  "about.title": "SOBRE MÍ",
+  "about.description": "Soy Ingeniero de Software con más de 8 años de experiencia diseñando y desarrollando soluciones digitales escalables para plataformas web y móviles.\n\nHe trabajado en sectores como financiero, transporte y seguros, construyendo aplicaciones modernas enfocadas en rendimiento, escalabilidad y experiencia de usuario.\n\nMi mayor fortaleza es el desarrollo backend con NodeJS y NestJS, especializándome en APIs robustas, arquitecturas limpias y microservicios escalables.\n\nTambién cuento con experiencia en Angular, Flutter y Swift, además de una certificación como desarrollador iOS por parte de Backbase.\n\nMe apasiona crear productos digitales modernos, eficientes y de alto impacto.",
 
   "services.subtitle": "Servicios",
   "services.title": "Soluciones Digitales",
 
-  "services.card1.title": "Desarrollo Backend",
+  "services.card1.title": "Desarrollo \nBackend",
   "services.card1.description": "APIs escalables, microservicios y arquitecturas robustas con NestJS y NodeJS.",
 
   "services.card2.title": "Aplicaciones Web & Mobile",
@@ -41,6 +41,10 @@
 
   "portfolio.subtitle": "Portafolio",
   "portfolio.title": "Últimos proyectos",
+  "portfolio.modal.project": "Proyecto",
+  "portfolio.modal.role": "Rol",
+  "portfolio.modal.overview": "Resumen",
+  "portfolio.modal.stack": "Stack",
  "portfolio.project1.title": "Banco Caja Social",
   "portfolio.project1.job": "Desarrollador iOS",
   "portfolio.project1.description": "Desarrollar de la aplicación bancaria para iOS basada en la plataforma Backbase, integrando servicios financieros externos y aplicando arquitecturas móviles escalables con enfoque en rendimiento y seguridad.",
