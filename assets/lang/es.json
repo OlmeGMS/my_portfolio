@@ -1,0 +1,77 @@
+{
+  "nav.home": "Inicio",
+  "nav.about": "Sobre Mí",
+  "nav.services": "Servicios",
+  "nav.portfolio": "Portafolio",
+  "nav.contact": "Contacto",
+
+  "hero.slide1.subtitle": "Software Engineer & Full Stack Developer",
+  "hero.slide1.title": "Construyendo \n Experiencias \n Digitales",
+  "hero.slide1.description": "Más de 8 años desarrollando soluciones backend, frontend y mobile con tecnologías modernas y arquitecturas escalables.",
+  "hero.slide1.button": "Contácteme",
+
+  "hero.slide2.subtitle": "Backend • Frontend • Mobile",
+  "hero.slide2.title": "Código Que \n Impulsa \n Productos",
+  "hero.slide2.description": "Especializado en NestJS, Angular, Flutter y Swift, creando aplicaciones rápidas, escalables y enfocadas en la experiencia del usuario.",
+  "hero.slide2.button": "Ver Portafolio",
+
+  "hero.slide3.subtitle": "Full Stack & Mobile Specialist",
+  "hero.slide3.title": "Soluciones \n Modernas y \n Escalables",
+  "hero.slide3.description": "Desarrollo aplicaciones web y móviles utilizando tecnologías modernas, bases de datos SQL y NoSQL, y buenas prácticas de arquitectura.",
+  "hero.slide3.button": "Hablemos",
+
+  "about.subtitle": "SOBRE MÍ",
+  "about.title": "¿Quién soy?",
+  "about.description": "Soy Ingeniero de Software con más de 8 años de experiencia diseñando y desarrollando soluciones digitales escalables para plataformas web y móviles. He trabajado en sectores como financiero, transporte y seguros, construyendo aplicaciones modernas enfocadas en rendimiento, escalabilidad y experiencia de usuario.\n\nMi mayor fortaleza es el desarrollo backend utilizando NodeJS y NestJS, donde me especializo en APIs robustas, arquitecturas limpias y microservicios escalables. También cuento con experiencia en Angular, Flutter y Swift.\n\nAdemás, cuento con una certificación como desarrollador iOS por parte de Backbase, fortaleciendo mi experiencia en soluciones móviles y aplicaciones empresariales.\n\nMe apasiona crear productos digitales modernos, eficientes y de alto impacto.",
+
+  "services.subtitle": "Servicios",
+  "services.title": "Soluciones Digitales",
+
+  "services.card1.title": "Desarrollo Backend",
+  "services.card1.description": "APIs escalables, microservicios y arquitecturas robustas con NestJS y NodeJS.",
+
+  "services.card2.title": "Aplicaciones Web & Mobile",
+  "services.card2.description": "Experiencias modernas y responsivas con Angular, Flutter y Swift.",
+
+  "services.card3.title": "Arquitectura & Rendimiento",
+  "services.card3.description": "Optimización, buenas prácticas y soluciones enfocadas en escalabilidad y velocidad.",
+
+  "stack.subtitle": "Stack",
+  "stack.title": "Tecnologías",
+
+  "portfolio.subtitle": "Portafolio",
+  "portfolio.title": "Últimos proyectos",
+ "portfolio.project1.title": "Banco Caja Social",
+  "portfolio.project1.job": "Desarrollador iOS",
+  "portfolio.project1.description": "Desarrollar de la aplicación bancaria para iOS basada en la plataforma Backbase, integrando servicios financieros externos y aplicando arquitecturas móviles escalables con enfoque en rendimiento y seguridad.",
+  "portfolio.project1.stack.job": "Stack: Swift, Backbase",
+  "portfolio.project2.title": "Entre Amigos – Fundación Grupo Social",
+  "portfolio.project2.job": "Desarrollador Backend",
+  "portfolio.project2.description": "Desarrollo de APIs e integraciones fintech, incluyendo procesos KYC, notificaciones, WebSockets y servicios de terceros aplicando clean architecture y código escalable.",
+  "portfolio.project2.stack.job": "Stack: NodeJS, NestJS, PostgreSQL, Redis, Docker, WebSockets",
+  "portfolio.project3.title": "Imagemaker",
+  "portfolio.project3.job": "Desarrollador Full Stack",
+  "portfolio.project3.description": "Migración y desarrollo de una plataforma de gestión de millas entre Banco Santander Chile y LATAM Airlines para administrar comercios afiliados y acumulación de millas.",
+  "portfolio.project3.stack.job": "Stack: NodeJS, NestJS, Angular, PostgreSQL, MongoDB, Firebase, Redis",
+  "portfolio.project4.title": "Montechelo",
+  "portfolio.project4.job": "Desarrollador Full Stack",
+  "portfolio.project4.description": "Desarrollo de CRM para call center con gestión de campañas, formularios, nómina y soluciones omnicanal integradas con WhatsApp y Facebook Messenger.",
+  "portfolio.project4.stack.job": "Stack: PHP, NodeJS, Angular, MySQL, Redis",
+  "portfolio.project5.title": "Fedecajas",
+  "portfolio.project5.job": "Desarrollador Full Stack",
+  "portfolio.project5.description": "Desarrollo de una plataforma de reservas hoteleras tipo Booking para las federaciones de cajas de compensación de Colombia.",
+  "portfolio.project5.stack.job": "Stack: NodeJS, React",
+  "portfolio.project6.title": "Cellvoz",
+  "portfolio.project6.job": "Desarrollador Full Stack",
+  "portfolio.project6.description": "Desarrollo y mantenimiento de un portal transaccional para campañas SMS, voz, PBX y servicios de comunicación integrados mediante APIs.",
+  "portfolio.project6.stack.job": "Stack: PHP, Java, Spring Boot, MySQL, Angular",
+  "portfolio.project7.title": "Taxisya",
+  "portfolio.project7.job": "Desarrollador Full Stack – Coordinado",
+  "portfolio.project7.description": "Coordinación y desarrollo de aplicaciones web y móviles enfocadas en servicios de transporte, incluyendo soluciones para taxi y transporte especial.",
+  "portfolio.project7.stack.job": "Stack: PHP, NodeJS, Angular, Flutter, Ionic, MongoDB, Firebase",
+
+  "contact.subtitle": "Contacto",
+  "contact.title": "Escríbeme",
+
+  "footer.text": "© 2026 Olme Marin."
+}
